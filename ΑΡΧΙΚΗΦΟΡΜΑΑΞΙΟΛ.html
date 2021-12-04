@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title> Δημιουργία φόρμας συλλογής στοιχείων </title></head>
+<link rel="icon" type="png" href="αρχείο .png">
+<style type ="text/css">
+body {
+  background-color: #0d0d0d;
+}
+fieldset{
+  color:silver; 
+  font-size:27px; 
+  border:solid silver 4px;
+  margin:50px;
+}
+input{
+  display:block;
+  width:300px;
+}
+textarea {
+  width:300px;
+  padding:10px;
+  height:100px;
+  display:block;
+  color:#777;
+}
+p.solid{
+  border-style:solid;
+  border-width:4px;
+  border-color:silver;
+  border-bottom:6px double;
+  border-left:6px double;
+  margin:50px;
+}
+a:hover {color:blue; font-style:italic}
+</style>
+<body>
+<h1 style="color:silver";><p style="text-align:center"> ΦΟΡΜΑ ΑΞΙΟΛΟΓΗΣΗΣ</p></h1>
+<p class="solid" style="color:silver; font-size:150%; text-align:center;">Η φόρμα αξιολόγησης αφορά τη δημιουργία ενός επετειακού δίσκου με σπάνιο υλικό απο την χρυσή εποχή της Ελληνικής RAP σκηνής στα τέλη της δεκαετίας του 90'!</p>
+<p style="color:silver;font-size:120%;">Εάν είσαι ήδη εγγραμένος ως επίσημο fun club μέλος συνδέσου πατώντας <a href="file:///C:/Users/billy/OneDrive/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1/%CE%A0%CE%91.%CE%A0%CE%95%CE%99/%CE%95%CE%9E%CE%91%CE%9C%CE%97%CE%9D%CE%9F%201%CE%BF/%CE%A4%CE%95%CE%A7%CE%9D%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%95%CE%A3%20%CE%94%CE%99%CE%91%CE%94%CE%99%CE%9A%CE%A4%CE%A5%CE%9F%CE%A5/%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%A4%CE%97%CE%A1%CE%99%CE%91/LAB3/P21027_LAB3/%CE%A3%CE%A5%CE%9D%CE%94%CE%95%CE%A3%CE%97%CE%9C%CE%95%CE%9B%CE%A9%CE%9D.html">ΕΔΩ</a></p>
+<p style="color:silver; font-size:120%;">Διαφορετικά ,συμπλήρωσε τη λίστα με τα στοιχεία σου στην παρακάτω φόρμα.</p>
+<fieldset>
+<legend>Στοιχεία Επικοινωνίας</legend>
+<img style="float:right"
+src="promophoto.jpg" alt="imiz.jpg">
+<!--Δεν είχε νόημα να βαλω php method κλπ διοτι ειναι τοπικα αποθηκευμενο, ωστόσο έβαλα το λινκ ,ώστε να κάνει redirect ,για να με βοηθήσει δομίκα στη συνάφεια της ιστοσελίδας-->
+<form action="file:///C:/Users/billy/OneDrive/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1/%CE%A0%CE%91.%CE%A0%CE%95%CE%99/%CE%95%CE%9E%CE%91%CE%9C%CE%97%CE%9D%CE%9F%201%CE%BF/%CE%A4%CE%95%CE%A7%CE%9D%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%95%CE%A3%20%CE%94%CE%99%CE%91%CE%94%CE%99%CE%9A%CE%A4%CE%A5%CE%9F%CE%A5/%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%A4%CE%97%CE%A1%CE%99%CE%91/LAB3/P21027_LAB3/%CE%A4%CE%95%CE%9B%CE%99%CE%9A%CE%97%20%CE%A6%CE%9F%CE%A1%CE%9C%CE%91.html?%CE%94%CE%B9%CE%B5%CF%8D%CE%B8%CF%85%CE%BD%CF%83%CE%B7+%CE%BA%CE%B1%CF%84%CE%BF%CE%B9%CE%BA%CE%AF%CE%B1%CF%82-%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8C%CF%82=+">
+
+<p style="color:silver; font-size:65%">Τα πεδία με (*) είναι υποχρεωτικά</p>
+<p>Γένος: <select name="γένος">
+<option>Άνδρας</option>
+<option>Γυναίκα</option>
+</select></p>
+Όνομα*:<input type="text" name="firstname" id="firstname" required><br>
+Επώνυμο*:<input type="text" name="lastname" id="lastname" required><br>
+Ηλικία:<input type="text" name="age" id="age"><br>
+Διεύθυνση:<textarea name="Διεύθυνση κατοικίας-αριθμός" id="dieuthinsi"> </textarea><br>
+Ταχ. Κωδικός: <input type="text" name="zip" value="Τ.Κ." maxlength="5" id="zip" ><br >
+E mail:<input type="email" name="email" value="hw_webtech@unipi.gr" id="email"><br>
+Κινητό*: <input type="tel" name="phone" id="phone" value="π.χ.6948484848" pattern="[0-9]{10}" required>
+<br>
+<input type="reset" value="Επαναφορά" id="reset">
+<input type="submit" value="Υποβολή" id="submit">  
+</form>
+</fieldset>
+</body>
+</html>
